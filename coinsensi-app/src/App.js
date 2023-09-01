@@ -2,11 +2,12 @@ import SearchAppBar from './Components/Navbar/index.js';
 import Home from './Components/Home/index.js';
 import About from './Components/About/index.js';
 import Contact from './Components/Contact/index.js';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import Footer from './Components/Footer/index.js';
 import Buy from './Components/Buy/index.js';
 import Reviews from './Components/Reviews/index.js';
 import Trading from './Components/Trading/index.js';
+import { Box, Container } from '@mui/material';
 
 import './App.css';
 
