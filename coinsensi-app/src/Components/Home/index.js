@@ -18,7 +18,8 @@ export default function Home() {
     };
 
     useEffect(() => {
-        AOS.init();
+        if (videoRef.current)
+            AOS.init();
     }, []);
 
     const videoStyle = {
@@ -40,7 +41,10 @@ export default function Home() {
     return (
         <>
             <Box item xs={12} sx={{ width: "100%", height: "auto" }}>
-                <video style={videoStyle} width="100%" height="auto" autoPlay loop ref={videoRef} >
+                <video style={videoStyle} width="100%" height="auto" autoPlay loop ref={videoRef}
+                    onPlay={() => setShowPlayButton(false)}
+                    onPause={() => setShowPlayButton(true)}
+                >
                     <source src="/videos/video2.mp4" type="video/mp4" />
                 </video>
                 {showPlayButton && (
