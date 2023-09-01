@@ -12,7 +12,7 @@ export default function Home() {
                 <Grid container spacing={2} justifyContent="center" alignItems="center">
                     <Grid item xs={12} md={6} justifyContent="flex-end" my={2}>
                         <Box sx={{ textAlign: "left" }}>
-                            <Typography variant="h3">ABOUT US</Typography>
+                            <Typography variant="h3" sx={{ fontWeight: 600, color: '#5ec3e0', fontFamily: 'Merriweather, serif' }}>ABOUT US</Typography>
                         </Box>
                         <Box sx={{ textAlign: "left" }} my={2}>
                             <Typography variant="body1">
@@ -25,8 +25,8 @@ export default function Home() {
                             </Button>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} sm={6} justifyItems="center" my={2}>
-                        <img src="/fav.webp" alt="Description" />
+                    <Grid item xs={12} sm={6} justifyContent="center" alignItems="center" my={2} sx={{ display: 'flex', flexDirection: 'column' }}>
+                        <img src="/coin-unscreen.webp" alt="Description" style={{ maxWidth: '100%', maxHeight: '100%', animation: 'App-logo-spin 5s linear infinite' }} />
                     </Grid>
                 </Grid>
             </Container>
