@@ -6,57 +6,75 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Container } from "@mui/system";
 
 const Navbar = styled(AppBar)({
   backgroundColor: "transparent",
-  boxShadow: "none",
+  boxShadow: "revert",
 });
 
 const Logo = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
+
+
   [theme.breakpoints.down("sm")]: {
-    display: "none",
+   
   },
 }));
 
 const MenuItems = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
-  marginLeft: "auto", // Push menu items to the right on large screens
+  marginLeft: "auto",
+  gap: "2rem",
   [theme.breakpoints.down("sm")]: {
-    display: "none",
+    position: "absolute",
+    flexDirection: "column",
+    backgroundColor: "white",
+    top: '103%',
+    left: 0,
+    width: '100%',
+    padding: '1rem 0',
+    zIndex: 999,
   },
   [theme.breakpoints.up("md")]: {
     display: "flex",
+    position: "relative",
   },
+  
 }));
 
 const HamburgerMenu = styled("div")(({ theme }) => ({
   display: "none",
   [theme.breakpoints.down("sm")]: {
     display: "block",
+    position: "absolute",
+    right: 0,
   },
 }));
 
 export default function SearchAppBar() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+
   return (
-    <Box container sx={{ flexGrow: 1 }}>
+    <Container container sx={{ flexGrow: 1 }}>
       <Navbar position="static">
         <Toolbar>
           <Logo>
             <img src="/fav.webp" alt="logo" style={{ height: "70px" }} />
-            <Typography variant="h6" sx={{fontSize:"25px", fontFamily:"sans-serif", fontWeight:"bolder"}}>
+            <Typography variant="h6" sx={{ fontSize: "25px", fontFamily: "sans-serif", fontWeight: "bolder" }}>
               <span style={{ color: "black" }}>Coin</span>
               <span style={{ color: "black" }}>Sensi</span>
             </Typography>
           </Logo>
-          <MenuItems sx={{ marginRight: "50px" }}>
+          <MenuItems sx={{display: isMenuOpen ? "flex" : "none" }}>
             <Typography
               variant="h6"
-              noWrap
+              wrap
               component="div"
-              sx={{ marginRight: 2, color: "black" }}
+              sx={{ color: "black" }}
             >
               Home
             </Typography>
@@ -100,12 +118,13 @@ export default function SearchAppBar() {
               color="inherit"
               aria-label="open drawer"
               sx={{ marginRight: 2, color: "black" }}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <MenuIcon />
             </IconButton>
           </HamburgerMenu>
         </Toolbar>
       </Navbar>
-    </Box>
+    </Container>
   );
 }
