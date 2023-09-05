@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 export default function Home() {
     const videoRef = useRef(null);
-    const [isMuted, setIsMuted] = useState(true);
+
     const [showPlayButton, setShowPlayButton] = useState(true);
 
     const handlePlayButtonClick = () => {
@@ -25,19 +25,9 @@ export default function Home() {
     const videoStyle = {
         width: "100%",
         height: "auto",
-        position: "relative", // Make sure the play button is positioned relative to the video container
+        position: "relative",
     };
 
-    const playButtonStyle = {
-        position: "absolute",
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        margin: "auto", // Center the play button
-        zIndex: 1,
-        cursor: "pointer",
-    };
     return (
         <>
             <Box item xs={12} sx={{ width: "100%", height: "auto" }}>

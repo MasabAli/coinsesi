@@ -1,10 +1,10 @@
-import { Container, Grid, Typography, Button, Box } from '@mui/material';
+import { Container, Grid, Typography, Box } from '@mui/material';
 
 export default function About() {
     return (
         <Container>
             <Grid container spacing={2} my={3} justifyContent="center" alignItems="center">
-                <Grid item xs={12} md={6} justifyContent="flex-end" my={2}>
+                <Grid item xs={12} md={6} sm={6} justifyContent="flex-end" my={2}>
                     <Box sx={{ textAlign: "left" }}>
                         <Typography variant="h3" sx={{ fontWeight: 600, color: '#5ec3e0', fontFamily: 'Merriweather, serif' }}>ABOUT US</Typography>
                     </Box>

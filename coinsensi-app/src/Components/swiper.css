@@ -1,0 +1,10 @@
+import React from 'react';
+import { Container, Grid, Typography, Box, Paper } from '@mui/material';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css'; // Import Swiper's CSS
+
+// Import Swiper's modules
+SwiperCore.use([Navigation, Pagination]);
+
+// ... (the rest of your code remains the same)

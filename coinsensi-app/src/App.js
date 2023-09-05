@@ -7,15 +7,16 @@ import Footer from './Components/Footer/index.js';
 import Buy from './Components/Buy/index.js';
 import Reviews from './Components/Reviews/index.js';
 import Trading from './Components/Trading/index.js';
-import { Box, Container } from '@mui/material';
+
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <SearchAppBar />
+      
       <Router>
+      <SearchAppBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
