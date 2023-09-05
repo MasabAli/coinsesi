@@ -1,8 +1,6 @@
 import { Container, Typography, Box, Button, Grid } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 export default function Buy() {
-    const theme = useTheme();
     const rowsForBuying = [
         {
             step: 1,
@@ -186,7 +184,7 @@ export default function Buy() {
                                 </Typography>
                             </Box>
                             <Box sx={{ verticalAlign: 'top' }}>
-                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' />
+                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' alt="ez" />
                             </Box>
                         </Box>
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} my={2}>
@@ -201,7 +199,7 @@ export default function Buy() {
                                 </Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' />
+                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' alt="ez" />
                             </Box>
                         </Box>
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} my={2}>
@@ -217,7 +215,7 @@ export default function Buy() {
                                 </Typography>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' />
+                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' alt="ez" />
                             </Box>
                         </Box>
                     </Grid>
@@ -227,7 +225,7 @@ export default function Buy() {
                     <Grid item xs={12} md={3} justifyContent="center" alignItems="center" my={2} sx={{ display: 'flex', flexDirection: 'column' }} >
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                             <Box sx={{ verticalAlign: 'top' }}>
-                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' />
+                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' alt="ez"/>
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                 <Typography variant="h6" sx={{ fontWeight: 600, fontFamily: 'Merriweather, serif' }}>
@@ -243,7 +241,7 @@ export default function Buy() {
                         </Box>
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} my={2}>
                             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' />
+                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' alt="ez" />
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                 <Typography variant="h6" sx={{ fontWeight: 600, fontFamily: 'Merriweather, serif' }}>
@@ -259,7 +257,7 @@ export default function Buy() {
                         </Box>
                         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }} my={2}>
                             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' />
+                                <img src='/ezgif.com-gif-maker (1).webp' width='100%' alt="ez" />
                             </Box>
                             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                                 <Typography variant="h6" sx={{ fontWeight: 600, fontFamily: 'Merriweather, serif' }}>
