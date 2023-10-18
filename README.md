@@ -1,2 +1,2 @@
 # coinsesi
-A website for a fiver client
+A cryptocurrency related website for a fiver client
